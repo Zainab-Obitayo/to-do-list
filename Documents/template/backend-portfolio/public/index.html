@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zainab Obitayo-Backend Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">Menu &#9662;</button>
+        <div class="dropdown-content">
+          <a href="#" onclick="showSection('about')">About Me</a>
+          <a href="#" onclick="showSection('projects')">Projects</a>
+          <a href="#" onclick="showSection('blogs')">Blogs</a>
+          <a href="#" onclick="showSection('contact')">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="aboutSection" class="section">
+      <h1>About Me</h1>
+      <div class="about-flex">
+        <div class="about-img">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Laptop with code" class="laptop-img">
+          <div class="code-overlay">
+            <pre>
+<span class="code-key">const</span> <span class="code-var">name</span> = <span class="code-str">'Zainab'</span>;
+<span class="code-key">console.log</span>(<span class="code-var">name</span>);
+            </pre>
+          </div>
+        </div>
+        <div class="about-info">
+          <h2>Zainab Obitayo</h2>
+          <p>I am a passionate backend developer with experience in Python, JavaScript, Node.js, Express, and building RESTful APIs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projectsSection" class="section">
+      <h1>Projects</h1>
+      <ul>
+        <li>
+          <strong>Project One</strong><br>
+          Trakmama<br>
+          <em>Node.js, Express, MongoDB</em><br>
+          <a href="https://github.com/Kaywuyep/TRAKMAMA_backend.git" target="_blank">GitHub</a> |
+          <a href="https://drive.google.com/file/d/1nbIBSJTPrwmdVcULJklJWU-nNWmOdfp0/view?usp=sharing" target="_blank">Demo Video</a> |
+          <a href="https://drive.google.com/file/d/1om4rkk_jMQLYubtMAJ_beFy4JwGVOnjI/view?usp=sharing" target="_blank">File</a>
+        </li>
+        <li>
+          <strong>Project Two</strong><br>
+          Automating Genomic Analysis: Bash to Python<br>
+          <em>Python, Bash</em><br>
+          <a href="https://github.com/Zainab-Obitayo/bash_to_python.git" target="_blank">GitHub</a>
+          <a href="https://drive.google.com/file/d/131dRYK1lU0S1jNvk8XDwuve15ia0p_0y/view?usp=sharing" target="_blank">File</a>
+        </li>
+        <li>
+          <strong>Project Three</strong><br>
+          Python Programming:  A level 1 to 3 project<br>
+          <em>Python</em><br>
+          <a href="https://github.com/Zainab-Obitayo/Level1_tasks.git" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="blogsSection" class="section">
+      <h1>Blogs</h1>
+      <ul>
+        <li>
+          <strong>How to convert from bash to python</strong><br>
+          <p>How I Converted Bash to Python for Genomic Variant Analysis: Lessons, Challenges, and AI Guidance</p>
+          <a href="https://zainabtech6.blogspot.com" target="_blank">Read More</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contactSection" class="section">
+      <h1>Contact</h1>
+      <div class="contacts">
+        <a href="https://www.linkedin.com/in/zee9252a6" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/obitayo.zynahb" target="_blank">Facebook</a>
+        <a href="mailto:zainabobitayo@gmail.com">Email</a>
+        <a href="https://www.instagram.com/zeezee_spicy?igsh=MWZqMThpYzFOeDVreQ==" target="_blank">Instagram</a>
+      </div>
+    </section>
+  </div>
+  <script>
+    function showSection(section) {
+      document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+      document.getElementById(section + 'Section').style.display = 'block';
+    }
+    showSection('about');
+  </script>
+</body>
+</html>
